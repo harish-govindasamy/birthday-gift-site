@@ -153,3 +153,122 @@ p {
 a {
   color: snow;
 }
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+.balloon,
+.emoji {
+  position: absolute;
+  top: -100px; /* Start from the top */
+  font-size: 3rem; /* Increase the size of the emojis */
+  animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh); /* Fall to the bottom */
+  }
+}
+
+.boom {
+  animation: boom 1s ease-out forwards;
+}
+
+@keyframes boom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+#age-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Happy Monkey", cursive;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+#age-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#age-container div:hover {
+  transform: scale(1.1);
+}
+
+#age-container div div:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#age-container div div:last-child {
+  font-size: 1rem;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Happy Monkey", cursive;
+  font-size: 1.2rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#countdown div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#countdown div:hover {
+  transform: scale(1.1);
+}
+
+#countdown div div:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#countdown div div:last-child {
+  font-size: 1rem;
+}
+
