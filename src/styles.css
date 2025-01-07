@@ -25,7 +25,7 @@ body::before {
   opacity: 0.5;
   pointer-events: none;
   animation: vignette-fade 5s ease-in-out infinite alternate;
-  /* will-change: opacity; */
+  will-change: opacity;
 }
 
 @keyframes vignette-fade {
@@ -57,26 +57,6 @@ body::before {
   justify-content: center; /* Center align content */
   line-height: 1.4; /* Adjust line height */
 }
-/* Typewriting effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%; /* Adjust this value based on the length of your text */
-  }
-}
-
-/* Blinking cursor effect */
-@keyframes blinkCaret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
 
 /* ...existing code... */
 
@@ -86,84 +66,7 @@ h3,
 h4,
 p {
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
-  animation: neon 1.5s ease-in-out infinite alternate;
-  /* will-change: text-shadow; */
-}
-
-@keyframes neon {
-  from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
-  }
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff,
-      0 0 40px #ff00ff;
-  }
-}
-
-/* @keyframes rotate-border-radius {
-  0% {
-    border-radius: 50%;
-  }
-  25% {
-    border-radius: 30% 70% 50% 50%;
-  }
-  50% {
-    border-radius: 50% 50% 30% 70%;
-  }
-  75% {
-    border-radius: 70% 30% 50% 50%;
-  }
-  100% {
-    border-radius: 50%;
-  }
-}
-
-#bff-img {
-  width: 150px;
-  border-radius: 50%;
-  border: 6px solid #efb0c9;
-  margin-bottom: 10px;
-  box-shadow: 0 0 15px 5px #efb0c9;
-  animation: rotate-border-radius 5s infinite linear;
-}
-
-#bday-age {
-  background: #efb0c9;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin: 5px 0 10px 0;
-}
-
-#bday-date {
-  margin: 0;
-  background: #efb0c9;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-#header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-@keyframes rotate-border-radius {
-  0% {
-    border-radius: 50%;
-  }
-  25% {
-    border-radius: 30% 70% 50% 50%;
-  }
-  50% {
-    border-radius: 50% 50% 30% 70%;
-  }
-  75% {
-    border-radius: 70% 30% 50% 50%;
-  }
-  100% {
-    border-radius: 50%;
-  }
+  text-shadow: 0px 0px 5px #0092ff;
 }
 
 #bff-img {
@@ -172,19 +75,18 @@ p {
   border-radius: 50%;
   margin-bottom: 10px;
   overflow: hidden;
-  border: 6px solid #efb0c9;
-  box-shadow: 0 0 15px 5px #efb0c9;
-  animation: rotate-border-radius 5s infinite linear;
+  border: 6px solid #0092ff;
+  box-shadow: 0 0 15px 5px #0092ff;
 }
 
 #bday-age,
 #bday-date {
-  background: #efb0c9;
+  background: #e5c247;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 5px 0 10px 0;
-  border: 3px solid #efb0c9;
-  animation: border-animation 3s infinite;
+  border: 3px solid #0092ff;
+  box-shadow: 0px 0px 5px #0092ff;
 }
 
 #header {
@@ -199,29 +101,6 @@ p {
 
 .gift-title {
   margin-bottom: 10px;
-}
-
-@keyframes border-animation {
-  0% {
-    border-color: #ffffff;
-    box-shadow: 0 0 5px #ffffff;
-  }
-  25% {
-    border-color: #ff9a9e;
-    box-shadow: 0 0 6px #ff9a9e;
-  }
-  50% {
-    border-color: #a2d2ff;
-    box-shadow: 0 0 7px #a2d2ff;
-  }
-  75% {
-    border-color: #fad0c4;
-    box-shadow: 0 0 8px #fad0c4;
-  }
-  100% {
-    border-color: #ffffff;
-    box-shadow: 0 0 5px #ffffff;
-  }
 }
 
 .gift-hint {
