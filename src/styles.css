@@ -7,6 +7,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: #000;
   color: #ffffff;
   position: relative;
 }
@@ -71,7 +72,7 @@ p {
 
 #bff-img {
   position: relative;
-  width: 300px;
+  width: 250px;
   border-radius: 50%;
   margin-bottom: 10px;
   overflow: hidden;
